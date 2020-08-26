@@ -8,7 +8,7 @@ public class Records {
    }
 
    public static boolean intervalsIntersect(Interval interval, Interval interval1) {
-      return interval.getStart() <= interval1.getEnd() && interval1.getStart() <= interval.getEnd();
+      return interval.start() <= interval1.end() && interval1.start() <= interval.end();
    }
 }
 
@@ -21,11 +21,11 @@ class Interval {
       this.end = end;
    }
 
-   public int getStart() {
+   public int start() {
       return start;
    }
 
-   public int getEnd() {
+   public int end() {
       return end;
    }
 
