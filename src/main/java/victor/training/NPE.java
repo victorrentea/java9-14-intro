@@ -4,10 +4,12 @@ package victor.training;
 public class NPE {
    public static void main(String[] args) {
       output(new A(new B(new C("Halo"))));
+      output(new A(new B(null)));
    }
 
    private static void output(A a) {
       // You, here
+
       System.out.println(a.getB().getC().getS().toUpperCase());
    }
 }
