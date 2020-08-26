@@ -10,6 +10,7 @@ public class Switch {
       System.out.println("VAT BD = " + getVAT("MD", 20, false));
 
       auditMessage("CreateOrder");
+
    }
 
    private static double getVAT(String isoCode, double value, boolean tobacco) {
