@@ -7,6 +7,7 @@ public class NPE {
    }
 
    private static void output(A a) {
+      // You, here
       System.out.println(a.getB().getC().getS().toUpperCase());
    }
 }
